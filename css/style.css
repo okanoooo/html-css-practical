@@ -1,0 +1,148 @@
+/* PC、スマホ共通スタイル */
+* {
+    box-sizing: border-box;
+    color: #000000;
+    background-color: #ffffff;
+}
+h1 {
+    font-size: 34px;
+}
+h2 {
+    font-size: 24px;
+}
+p {
+    font-size: 18px;
+}
+body {
+    /* margin: 0 auto 0 auto; */
+
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ヘッダー */
+header {
+    display: flex;
+    margin: 0 100px 30px 100px;
+    justify-content: space-between;
+}
+/* タイトル */
+#myprofile {
+    padding: 0px 30px;
+    border: solid 2px #000000;
+}
+/* ナビゲーションのレイアウト */
+#nav-link {
+    font-size: 34px;
+    display: flex;
+}
+/* ナビゲーションのリンクの装飾 */
+#nav-link a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* メインビジュアル */
+#main-visual {
+    width: 100%;
+    text-align: center;
+}
+#main-visual > img {
+    max-width: 100%;
+}
+
+
+/* セクションタイトル */
+.section-title {
+    text-align: center;
+    padding: 30px auto;
+}
+
+/* About */
+#about {
+    margin: 50px 0;
+    position: relative;
+}
+#about-content {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+#about-content > img {
+    margin-right: 150px;
+    border-radius: 476px;
+}
+#about-profile {
+    margin-top: 40px;
+}
+
+/* Works */
+#works {
+    margin-bottom: 100px;
+    position: relative;
+}
+#works-content {
+    display: flex;
+    justify-content: center;
+}
+.works-card {
+    margin: 0 5px;
+    width: 20%;
+}
+.works-card > img {
+    width: 100%;
+}
+.works-card > p {
+    width: 100%;
+    margin: 0;
+}
+
+/* フッター */
+#copyright {
+    text-align: center;
+}
+
+
+/*====================
+ スマートフォン用のスタイル
+=====================*/
+@media screen and (max-width: 767px) {
+    /* ヘッダー */
+    header {
+        display: flex;
+        margin: 0 10px 0 10px;
+        justify-content: space-between;
+    }
+
+    /* About */
+
+    #about-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 50px 30px;
+        justify-content: center;
+    }
+    #about-content > img {
+        border-radius: 476px;
+        margin: 0;
+    }
+    #about-profile {
+        margin: 0;
+    }
+
+    /* Works */
+    #works-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .works-card {
+        margin: 0 0 50px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
