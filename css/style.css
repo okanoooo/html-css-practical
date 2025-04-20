@@ -33,6 +33,11 @@ header {
     padding: 0px 30px;
     border: solid 2px #000000;
 }
+/* タイトルのリンクの装飾 */
+#myprofile a {
+    text-decoration: none;
+}
+
 /* ナビゲーションのレイアウト */
 #nav-link {
     font-size: 34px;
